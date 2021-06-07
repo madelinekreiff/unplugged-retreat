@@ -87,6 +87,85 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* -------------------- Mobile Styles -------------------- */
+/* Base styles */
+html {
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-size: 1em;
+}
+/* Base layout */
+.content-wrapper {
+  max-width: 1201px;
+  width: 90%;
+}
+
+/* Flex flow layout */
+header .content-wrapper,
+.newsletter .content-wrapper,
+.features .content-wrapper,
+.reviews .content-wrapper,
+.mission .content-wrapper,
+.contact-section .content-wrapper,
+.faq-main .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Header & Footer */
+header
+footer {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Nav */
+header nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul {
+  display: flex;
+  padding-left: 0;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header ul li a {
+  color: #e2e3ed;
+  font-size: 1.125em;
+}
+
+/* ---------- Homepage ---------- */
+/* Newsletter */
+
+
+/* Features */
+
+
+/* Reviews */
+
+
+
+/* ---------- About ---------- */
+/* Mission */
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
