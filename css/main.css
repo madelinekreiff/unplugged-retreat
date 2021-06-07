@@ -95,8 +95,11 @@ html {
   margin: 0;
 }
 body {
+  color: #e2e3ed;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
 }
+
 /* Base layout */
 .content-wrapper {
   max-width: 1201px;
@@ -104,7 +107,6 @@ body {
 }
 
 /* Flex flow layout */
-header .content-wrapper,
 .newsletter .content-wrapper,
 .features .content-wrapper,
 .reviews .content-wrapper,
@@ -115,13 +117,25 @@ header .content-wrapper,
   flex-flow: row wrap;
 }
 
-/* Header & Footer */
-header
-footer {
+/* Header */
+header {
+  align-items: center;
+  background-color: #202322;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 15px 0 10px 0;
+}
+header .content-wrapper {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 0;
+}
+.header-divider {
+  border-bottom: 1px solid #3a3a3a;
+  margin: 20px 0;
   width: 100%;
 }
 
@@ -130,28 +144,112 @@ header nav {
   align-items: center;
   display: flex;
   justify-content: space-around;
+  padding: 15px 0;
+  width: 60%;
 }
 header nav ul {
+  align-items: center;
   display: flex;
+  justify-content: space-between;
   padding-left: 0;
+  width: 45%;
 }
 header nav ul li {
   list-style-type: none;
 }
-header ul li a {
+header nav ul li a {
   color: #e2e3ed;
   font-size: 1.125em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* ---------- Homepage ---------- */
-/* Newsletter */
+/* Hero area */
+.hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') no-repeat;
+}
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  margin: 0;
+  padding: 50px 0 0 20px;
+}
 
+/* Newsletter */
+.newsletter {
+  background-color: #527158;
+}
+.newsletter .content-wrapper {
+  padding: 30px 0 50px 0;
+  margin-left: 20px;
+}
+.form-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+}
+.form-para {
+  font-size: 0.875em;
+  line-height: 1em;
+}
+.signup-form input {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 18px;
+  padding: 20px 0;
+  width: 100%;
+}
 
 /* Features */
-
+.features-items article {
+  width: 56%;
+}
+.fontawesome-icon,
+.features-item-description {
+  margin: 0;
+}
+.features {
+  background: url('') no-repeat;
+  color: #e1e2ea;
+}
+.features h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  margin-left: 20px;
+}
+.features-items {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.features-item-description {
+  font-size: 0.875em;
+  text-align: center;
+}
 
 /* Reviews */
-
+.reviews {
+  background-color: #2a423a;
+}
+.reviews .content-wrapper {
+  padding-bottom: 45px;
+}
+.reviews h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  margin-left: 20px;
+}
+.reviews-text-2017 h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin-left: 20px;
+  width: 48%;
+}
+.reviews-text-2017 p {
+  font-size: 0.875em;
+  margin-left: 20px;
+}
 
 
 /* ---------- About ---------- */
@@ -161,7 +259,44 @@ header ul li a {
 
 
 
-
+/* Footer */
+footer {
+  align-items: center;
+  background-color: #202322;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 50px 0 10px 0;
+  text-align: center;
+}
+footer .content-wrapper {
+  background-color: #202322;
+}
+footer p {
+  margin: 0;
+}
+.footer-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin: 0 0 20px 0;
+}
+.contact {
+  margin-bottom: 45px;
+}
+.social {
+  margin-bottom: 45px;
+}
+.social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 80px;
+  width: 50%;
+}
+.contact-address, .copyright {
+  font-size: 0.875em;
+}
 
 
 
