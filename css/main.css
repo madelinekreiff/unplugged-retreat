@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* -------------------- Header, Footer & Mobile Base Styles -------------------- */
+/* -------------------- Mobile Styles - Header, Nav, Footer, Base Styles -------------------- */
 /* Base styles */
 html {
   font-size: 16px;
@@ -226,7 +226,11 @@ footer p {
 
 /* Newsletter */
 .newsletter {
+  align-items: center;
   background-color: #527158;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .newsletter .content-wrapper {
   padding: 30px 0 50px 0;
@@ -251,25 +255,20 @@ footer p {
   width: 100%;
 }
 .signup-form input[type=text] {
-  align-items: center;
   box-sizing: border-box;
   color: #9d9ea4;
-  display: flex;
   font-size: 0.875em;
   font-style: italic;
   padding-left: 1em;
 }
 .signup-form input[type=button] {
-  align-items: center;
   background-color: #2a423a;
   border: none;
   color: #e2e3ed;
-  display: flex;
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
   justify-content: center;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -522,15 +521,67 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* -------------------- Tablet Styles -------------------- */
+@media only screen and (min-width: 768px) {
+  /* ----- Header, Nav, Footer ----- */
+  /* Layout */
+  .content-wrapper {
+    margin: 0 50px;
+  }
+  /* Header */
+  .header-img {
+    width: 90%;
+  }
+  .header-img img {
+    width: 100%;
+  }
+  .header-divider {
+    border: none;
+  }
+  header .content-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  /* Nav */
+  header nav ul {
+    width: 40%;
+  }
+  header nav ul li {
+    padding-left: 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 100px;
+  }
+  .footer-content {
+    flex-direction: row;
+  }
+  .contact,
+  .social {
+    margin-bottom: 100px;
+  }
+
+  /* ----- Homepage ----- */
+  /* Newsletter */
+  .newsletter .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .form-description,
+  .signup-form {
+    margin: 0;
+    width: 40%;
+  }
+  .form-description p {
+    width: 100%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* -------------------- Desktop Styles -------------------- */
+@media only screen and (min-width: 1200px) {
+
 }
 
 /* ==========================================================================
