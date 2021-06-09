@@ -226,7 +226,7 @@ footer p {
   font-weight: 500;
   line-height: 1.2em;
   margin: 0;
-  padding: 50px 0 0 20px;
+  padding: 50px 0;
 }
 
 /* Newsletter */
@@ -283,16 +283,20 @@ footer p {
   margin: 0;
 }
 .features {
+  align-items: center;
   background: url('../img/features-background.jpg') center no-repeat #333;
   background-size: cover;
   color: #e1e2ea;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .features h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
   line-height: 1.2em;
-  margin: 50px 0 30px 20px;
+  margin: 50px 0 30px 0;
 }
 .features-items {
   align-items: center;
@@ -313,7 +317,11 @@ footer p {
 
 /* Reviews */
 .reviews {
+  align-items: center;
   background-color: #2a423a;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .reviews .content-wrapper {
   padding-bottom: 45px;
@@ -322,24 +330,28 @@ footer p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
-  margin: 50px 0 30px 20px;
+  margin: 50px 0 30px 0;
 }
 .reviews-img {
-  margin: 0 0 0 20px;
+  margin: 0;
 }
 .reviews-img img {
   width: 100%;
+}
+.reviews-2017 {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 .reviews-text-2017 h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
-  margin-left: 20px;
   width: 48%;
 }
 .reviews-text-2017 p {
   font-size: 0.875em;
-  margin-left: 20px;
 }
 
 
@@ -361,7 +373,7 @@ footer p {
   padding: 50px 0;
 }
 
-/* Mission */
+/* Mission section */
 .mission {
   align-items: center;
   background-color: #527158;
@@ -375,7 +387,7 @@ footer p {
   margin: 0;
 }
 
-/* Contact Section */
+/* Contact section */
 .contact-section {
   align-items: center;
   background-color: #2a423a;
@@ -406,7 +418,7 @@ footer p {
 }
 
 /* -------------------- FAQ Page -------------------- */
-/* FAQ Main */
+/* FAQ main */
 .faq-main {
   align-items: center;
   background-color: #527158;
@@ -536,6 +548,7 @@ footer p {
     margin: 0 50px;
     max-width: 640px;
   }
+
   /* Header */
   .header-img {
     width: 90%;
@@ -563,6 +576,8 @@ footer p {
     padding-top: 100px;
   }
   .footer-content {
+    align-items: flex-start;
+    flex-basis: 50%;
     flex-direction: row;
   }
   .contact,
@@ -574,6 +589,11 @@ footer p {
   }
   .contact-address {
     line-height: 1.5em;
+  }
+  .copyright {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
   }
 
   /* ----- Homepage ----- */
@@ -588,26 +608,49 @@ footer p {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding-top: 45px;
   }
   .form-description,
   .signup-form {
     margin: 0;
     width: 40%;
   }
+
   /* Features */
   .features h1 {
     font-size: 2.25em;
     line-height: 1.33em;
   }
+  .features-items article {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+  }
+  .features-item-description {
+    width: 62%;
+  }
 
   /* Reviews */
+  .reviews {
+    padding: 50px 0;
+  }
   .reviews h2 {
     font-size: 2.25em;
     line-height: 1.2em;
   }
+  .reviews-2017 {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .reviews-text-2017 {
+    margin-left: 40px;
+    width: 50%;
+  }
   .reviews-text-2017 h3 {
     font-size: 1.5em;
     line-height: 1.25em;
+    width: 100%;
   }
 
 }
