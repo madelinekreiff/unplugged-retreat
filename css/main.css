@@ -710,7 +710,6 @@ footer p {
   .faq-main .content-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
   }
   .faq-content {
     align-items: flex-start;
@@ -799,7 +798,21 @@ footer p {
   .contact-content p {
     font-size: 1.125em;
   }
-
+  
+  /* ---------- FAQ Page ---------- */
+  /* FAQ main */
+  .faq-main h2 {
+    font-size: 3em;
+  }
+  .faq-content {
+    justify-content: flex-start;
+  }
+  .faq-content h4 {
+    font-size: 1.375em;
+  }
+  .faq-content p {
+    font-size: 1.125em;
+  }
 } /* end desktop styles */
 
 /* ==========================================================================
