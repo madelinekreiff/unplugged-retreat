@@ -782,6 +782,24 @@ footer p {
     font-size: 1.125em;
   }
 
+  /* ---------- About Page ---------- */
+  /* Headings */
+  .mission h2,
+  .contact-section h2 {
+    font-size: 3em;
+    line-height: 1.14em;
+    width: 96%;
+  }
+  .contact-heading {
+    font-size: 1.125em;
+  }
+
+  /* Paragraph text */
+  .mission-content p,
+  .contact-content p {
+    font-size: 1.125em;
+  }
+
 } /* end desktop styles */
 
 /* ==========================================================================
