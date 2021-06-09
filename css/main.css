@@ -212,14 +212,19 @@ footer p {
 /* -------------------- Homepage -------------------- */
 /* Hero area */
 .hero-area {
+  align-items: flex-start;
   background: url('../img/hero-image.jpg') center no-repeat #333;
   background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   min-height: 500px;
 }
 .hero-area h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
   font-weight: 500;
+  line-height: 1.2em;
   margin: 0;
   padding: 50px 0 0 20px;
 }
@@ -242,7 +247,7 @@ footer p {
 }
 .form-para {
   font-size: 0.875em;
-  line-height: 1em;
+  line-height: 1.125em;
 }
 .signup-form {
   width: 100%;
@@ -286,6 +291,7 @@ footer p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  line-height: 1.2em;
   margin: 50px 0 30px 20px;
 }
 .features-items {
@@ -301,6 +307,7 @@ footer p {
 }
 .features-item-description {
   font-size: 0.875em;
+  line-height: 1.4em;
   text-align: center;
 }
 
@@ -527,6 +534,7 @@ footer p {
   /* Layout */
   .content-wrapper {
     margin: 0 50px;
+    max-width: 640px;
   }
   /* Header */
   .header-img {
@@ -561,8 +569,20 @@ footer p {
   .social {
     margin-bottom: 100px;
   }
+  .footer-heading {
+    font-size: 1.5em;
+  }
+  .contact-address {
+    line-height: 1.5em;
+  }
 
   /* ----- Homepage ----- */
+  /* Hero area */
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+
   /* Newsletter */
   .newsletter .content-wrapper {
     display: flex;
@@ -574,9 +594,22 @@ footer p {
     margin: 0;
     width: 40%;
   }
-  .form-description p {
-    width: 100%;
+  /* Features */
+  .features h1 {
+    font-size: 2.25em;
+    line-height: 1.33em;
   }
+
+  /* Reviews */
+  .reviews h2 {
+    font-size: 2.25em;
+    line-height: 1.2em;
+  }
+  .reviews-text-2017 h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
 }
 
 /* -------------------- Desktop Styles -------------------- */
