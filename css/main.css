@@ -103,7 +103,6 @@ body {
 /* Base layout */
 .content-wrapper {
   margin: 0 20px;
-  max-width: 1201px;
   width: 90%;
 }
 
@@ -617,7 +616,10 @@ footer p {
   }
 
   /* Features */
-  .features h1 {
+  .features {
+    padding: 100px 0;
+  }
+  .features h2 {
     font-size: 2.25em;
     line-height: 1.33em;
   }
@@ -634,7 +636,7 @@ footer p {
 
   /* Reviews */
   .reviews {
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .reviews h2 {
     font-size: 2.25em;
@@ -721,8 +723,66 @@ footer p {
 
 /* -------------------- Desktop Styles -------------------- */
 @media only screen and (min-width: 1200px) {
+  /* ---------- Header, Nav, Footer ---------- */
+  /* Layout */
+  .content-wrapper {
+    margin: 0 120px;
+    max-width: 960px;
+  }
 
-}
+  /* Header & Nav stay the same */
+
+  /* Footer */
+  .footer-heading {
+    font-size: 1.875em;
+  }
+  .contact-address,
+  .copyright {
+    font-size: 1.125em;
+  }
+
+  /* ---------- Home Page ---------- */
+  /* Hero area */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 75%;
+  }
+
+  /* Newsletter */
+  .form-heading {
+    font-size: 1.875em;
+  }
+  .form-para {
+    font-size: 1.125em;
+  }
+  .signup-form input[type=text] {
+    font-size: 1.125em;
+  }
+  .signup-form input[type=button] {
+    font-size: 1.5em;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+  .features-items article {
+    flex-basis: 30%;
+  }
+  .features-item-description {
+    font-size: 1.125em;
+  }
+
+  /* Reviews */
+  .reviews-text-2017 h3 {
+    font-size: 1.875em;
+    line-height: 1.2em;
+  }
+  .reviews-text-2017 p {
+    font-size: 1.125em;
+  }
+
+} /* end desktop styles */
 
 /* ==========================================================================
    Print styles.
