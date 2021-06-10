@@ -106,17 +106,6 @@ body {
   width: 90%;
 }
 
-/* Flex flow layout */
-.newsletter .content-wrapper,
-.features .content-wrapper,
-.reviews .content-wrapper,
-.mission .content-wrapper,
-.contact-section .content-wrapper,
-.faq-main .content-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 /* Header */
 header {
   align-items: center;
@@ -272,6 +261,9 @@ footer p {
   justify-content: center;
 }
 .newsletter .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   padding: 30px 0 50px 0;
 }
 .form-heading {
@@ -325,6 +317,10 @@ footer p {
   flex-flow: row wrap;
   justify-content: center;
 }
+.features .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
 .features h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -366,6 +362,8 @@ footer p {
   justify-content: center;
 }
 .reviews .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
   padding-bottom: 45px;
 }
 .reviews h2 {
@@ -416,6 +414,8 @@ footer p {
 /* Layout */
 .mission .content-wrapper,
 .contact-section .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
   padding: 50px 0;
 }
 
@@ -423,6 +423,12 @@ footer p {
 .mission {
   align-items: center;
   background-color: #527158;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.mission-content {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -461,7 +467,12 @@ footer p {
   justify-content: center;
 }
 .contact-content {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
   font-style: normal;
+  justify-content: flex-start;
+  width: 100%;
 }
 .contact-section h2 {
   margin: 0 0 40px 0;
@@ -498,6 +509,12 @@ footer p {
   justify-content: flex-start;
   margin: 0 20px;
   padding: 50px 0;
+}
+.faq-content {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 .faq-main h2 {
   font-family: 'Poppins', sans-serif;
@@ -667,9 +684,6 @@ footer p {
 
   /* Newsletter */
   .newsletter .content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     padding-top: 45px;
   }
   .form-description,
@@ -742,7 +756,8 @@ footer p {
     margin-bottom: 40px;
   }
   .mission-content {
-    display: flex;
+    align-items: flex-start;
+    flex-flow: nowrap;
     justify-content: space-between;
   }
   .mission-content p {
@@ -762,7 +777,7 @@ footer p {
     font-size: 1.5em;
   }
   .contact-content {
-    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
   }
@@ -780,15 +795,13 @@ footer p {
     font-size: 2.25em;
   }
   .faq-main .content-wrapper {
-    display: flex;
     justify-content: space-between;
   }
   .faq-content {
     align-items: flex-start;
-    display: flex;
     flex-basis: 45%;
-    flex-flow: row wrap;
     justify-content: center;
+
   }
 } /* end tablet styles */
 
@@ -865,7 +878,7 @@ footer p {
     width: 96%;
   }
   .contact-heading {
-    font-size: 1.125em;
+    font-size: 1.875em;
   }
 
   /* Map */
