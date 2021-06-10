@@ -403,6 +403,23 @@ footer p {
   font-size: 0.875em;
 }
 
+/* Map */
+.map-container {
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 75%;
+  position: relative;
+  width: 100%;
+}
+.map-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /* Contact section */
 .contact-section {
   align-items: center;
