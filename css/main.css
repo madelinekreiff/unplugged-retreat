@@ -316,8 +316,16 @@ footer p {
   margin-bottom: 30px;
 }
 .features-items article {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   margin: 30px 0;
   width: 66%;
+}
+.fontawesome-icon i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 .features-item-description {
   font-size: 0.875em;
@@ -657,13 +665,14 @@ footer p {
     line-height: 1.33em;
   }
   .features-items article {
-    align-items: center;
-    display: flex;
     flex-basis: 50%;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column wrap;
   }
-  .features-item-description {
+  .fontawesome-icon i {
+    font-size: 4.5em;
+    width: 62%;
+  }
+.features-item-description {
     width: 62%;
   }
 
