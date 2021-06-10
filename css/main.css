@@ -182,7 +182,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 50px 0 10px 0;
+  padding: 50px 0 15px 0;
   text-align: center;
 }
 footer .content-wrapper {
@@ -208,15 +208,39 @@ footer p {
 }
 .contact,
 .social {
-  margin-bottom: 45px;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
 }
 .social-icons {
+  align-items: center;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 62.5%;
 }
-.contact-address, .copyright {
+.social-icons p {
+  align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+.social-icons p i {
+  color: #fff;
+  font-size: 1.125em;
+}
+.contact-address,
+.copyright {
   font-size: 0.875em;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
 }
 
 /* -------------------- Home Page -------------------- */
@@ -618,7 +642,7 @@ footer p {
   .footer-content {
     align-items: flex-start;
     flex-basis: 50%;
-    flex-direction: row;
+    flex-flow: nowrap;
   }
   .contact,
   .social {
@@ -631,9 +655,7 @@ footer p {
     line-height: 1.5em;
   }
   .copyright {
-    display: flex;
     flex-basis: 50%;
-    justify-content: center;
   }
 
   /* ---------- Home Page ---------- */
