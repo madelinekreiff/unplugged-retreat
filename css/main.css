@@ -718,6 +718,11 @@ footer p {
     flex-basis: 45%;
   }
 
+  /* Map */
+  .map-container {
+    padding-bottom: 45.5%;
+  }
+
   /* Contact section */
   .contact h2 {
     margin-bottom: 55px;
@@ -830,6 +835,11 @@ footer p {
   }
   .contact-heading {
     font-size: 1.125em;
+  }
+
+  /* Map */
+  .map-container {
+    padding-bottom: 37.5%;
   }
 
   /* Paragraph text */
